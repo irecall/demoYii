@@ -1,0 +1,35 @@
+2015/05/15 07:47:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\wamp\www\yii\demos\blog\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/demos/blog/index.php/site/
+---
+2015/05/15 09:06:33 [error] [php] mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() (C:\wamp\www\yii\demos\blog\protected\controllers\SiteController.php:52)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#2 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\wamp\www\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 C:\wamp\www\yii\demos\blog\index.php(11): CWebApplication->run()
+REQUEST_URI=/yii/demos/blog/index.php/site/contact
+2015/05/15 11:24:39 [error] [exception.CException] exception 'CException' with message 'TestController cannot find the requested view "login".' in C:\wamp\www\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('login', NULL, true)
+#1 C:\wamp\www\yii\demos\blog\protected\controllers\TestController.php(16): CController->render('login')
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): TestController->actionAll()
+#3 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('All')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('test/All')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 C:\wamp\www\yii\demos\blog\index.php(11): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/demos/blog/index.php/test/All
+---
